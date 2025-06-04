@@ -170,7 +170,7 @@ impl CrosswalkFsm {
                 // If already Walk or Blinking, button press is ignored or could reset timer (not implemented here)
             }
 
-	    /*
+	    /* 250603:DST obsolete events, see CrosswalkFSM::handle_event
             CrosswalkEvent::StoplightIsRed => {
                 // This event is triggered by the main loop when stoplight turns red
                 if self.state == CrosswalkState::DontWalk && self.button_pressed_waiting_for_red {
